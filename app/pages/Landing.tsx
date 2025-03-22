@@ -107,12 +107,12 @@ export default function HomePage() {
                             <div>
                                 <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center border border-yellow-600">
                                     <div className="text-center">
-                                        <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] to-[#8365B2] text-transparent bg-clip-text">
+                                        <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] from-40% to-[#8365B2] text-transparent bg-clip-text">
                                             {countdown.days}
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-xs md:text-sm bg-gradient-to-bl from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
+                                <div className="text-sm md:text-lg bg-gradient-to-b from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
                                     Days
                                 </div>
                             </div>
@@ -121,12 +121,12 @@ export default function HomePage() {
                             <div>
                                 <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center border border-yellow-600">
                                     <div className="text-center">
-                                        <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] to-[#8365B2] text-transparent bg-clip-text">
-                                            {countdown.seconds}
+                                        <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] from-40% to-[#8365B2] text-transparent bg-clip-text">
+                                            {countdown.hours}
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-xs md:text-sm bg-gradient-to-bl from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
+                                <div className="text-sm md:text-lg bg-gradient-to-b from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
                                     Hours
                                 </div>
                             </div>
@@ -134,12 +134,12 @@ export default function HomePage() {
                             <div>
                                 <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center border border-yellow-600">
                                     <div className="text-center">
-                                        <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] to-[#8365B2] text-transparent bg-clip-text">
+                                        <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] from-40% to-[#8365B2] text-transparent bg-clip-text">
                                             {countdown.minutes}
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-xs md:text-sm bg-gradient-to-bl from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
+                                <div className="text-sm md:text-lg bg-gradient-to-b from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
                                     Minutes
                                 </div>
                             </div>
@@ -147,12 +147,12 @@ export default function HomePage() {
                             <div>
                                 <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center border border-yellow-600">
                                     <div className="text-center">
-                                        <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] to-[#8365B2] text-transparent bg-clip-text">
+                                        <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] from-40% to-[#8365B2] text-transparent bg-clip-text">
                                             {countdown.seconds}
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-xs md:text-sm bg-gradient-to-bl from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
+                                <div className="text-sm md:text-lg bg-gradient-to-b from-[#FFD700] to-[#FF8C00] bg-clip-text text-transparent">
                                     Seconds
                                 </div>
                             </div>
