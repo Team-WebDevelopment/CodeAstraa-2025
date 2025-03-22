@@ -1,8 +1,14 @@
-"use client"
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaTimes, FaBars } from 'react-icons/fa';
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaTimes,
+  FaBars,
+} from "react-icons/fa";
 
 const Navbar = () => {
   // State for mobile menu
@@ -16,16 +22,28 @@ const Navbar = () => {
 
       {/* Desktop Navigation - Top Center with Glassmorphism */}
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 hidden md:flex space-x-6 bg-white/5 backdrop-filter backdrop-blur-md px-8 py-2 rounded-full border border-white/10 shadow-lg">
-        <Link href="/about" className="bg-yellow-400 rounded-full px-8 py-2 text-lg font-bold">
+        <Link
+          href="/about"
+          className="bg-yellow-400 rounded-full px-8 py-2 text-lg font-bold"
+        >
           About
         </Link>
-        <Link href="/timeline" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2">
+        <Link
+          href="/timeline"
+          className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2"
+        >
           Timeline
         </Link>
-        <Link href="/themes" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2">
+        <Link
+          href="/themes"
+          className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2"
+        >
           Themes
         </Link>
-        <Link href="/prizes" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2">
+        <Link
+          href="/prizes"
+          className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2"
+        >
           Prizes
         </Link>
       </div>
@@ -36,7 +54,11 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="bg-yellow-400 rounded-full p-3"
         >
-          {mobileMenuOpen ? <FaTimes className="text-xl" /> : <FaBars className="text-xl" />}
+          {mobileMenuOpen ? (
+            <FaTimes className="text-xl" />
+          ) : (
+            <FaBars className="text-xl" />
+          )}
         </button>
       </div>
 
