@@ -1,8 +1,14 @@
-"use client"
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaTimes, FaBars } from 'react-icons/fa';
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaTimes,
+  FaBars,
+} from "react-icons/fa";
 
 const Navbar = () => {
   // State for mobile menu
@@ -11,21 +17,33 @@ const Navbar = () => {
     <nav className="absolute w-full flex justify-between items-center px-10 py-5 z-50">
       {/* Logo - Top Left */}
       <div className="absolute top-5 left-5 md:left-10 z-30">
-        <Image src="/navLogo.png" alt="IEEE Logo" width={120} height={50} />
+        <Image src="/navLogo.png" alt="IEEE Logo" width={200} height={100} />
       </div>
 
       {/* Desktop Navigation - Top Center with Glassmorphism */}
-      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 hidden md:flex space-x-6 bg-white/5 backdrop-filter backdrop-blur-md px-8 py-2 rounded-full border border-white/10 shadow-lg">
-        <Link href="/about" className="bg-yellow-400 rounded-full px-8 py-2 text-lg font-bold">
+      <div className="absolute top-6 font-mono left-1/2 transform text-xl -translate-x-1/2 hidden md:flex space-x-6 bg-white/5 rounded-full border border-yellow-400/5 shadow-lg">
+        <Link
+          href="/about"
+          className="bg-yellow-400 rounded-full px-8 py-2  flex items-center font-bold"
+        >
           About
         </Link>
-        <Link href="/timeline" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2">
+        <Link
+          href="/timeline"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-4"
+        >
           Timeline
         </Link>
-        <Link href="/themes" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2">
+        <Link
+          href="/themes"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-4"
+        >
           Themes
         </Link>
-        <Link href="/prizes" className="text-lg font-bold text-yellow-400 hover:text-yellow-300 transition px-6 py-2">
+        <Link
+          href="/prizes"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-4"
+        >
           Prizes
         </Link>
       </div>
@@ -36,7 +54,11 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="bg-yellow-400 rounded-full p-3"
         >
-          {mobileMenuOpen ? <FaTimes className="text-xl" /> : <FaBars className="text-xl" />}
+          {mobileMenuOpen ? (
+            <FaTimes className="text-xl" />
+          ) : (
+            <FaBars className="text-xl" />
+          )}
         </button>
       </div>
 
@@ -115,20 +137,20 @@ const Navbar = () => {
       )}
 
       {/* Social Media - Top Right (Desktop only) */}
-      <div className="absolute top-10 right-10 hidden md:flex space-x-4">
+      <div className="absolute top-7 right-7 hidden md:flex space-x-4 opacity-50">
         <Link href="https://github.com" target="_blank">
-          <div className="bg-yellow-400 rounded-full p-3">
-            <FaGithub className="text-xl" />
+          <div className="rounded-full">
+            <FaGithub className="text-6xl text-yellow-400" />
           </div>
         </Link>
         <Link href="https://linkedin.com" target="_blank">
-          <div className="bg-yellow-400 rounded-full p-3">
-            <FaLinkedin className="text-xl" />
+          <div className="rounded-full">
+            <FaLinkedin className="text-6xl text-yellow-400" />
           </div>
         </Link>
         <Link href="https://instagram.com" target="_blank">
-          <div className="bg-yellow-400 rounded-full p-3">
-            <FaInstagram className="text-xl" />
+          <div className="rounded-full">
+            <FaInstagram className="text-6xl text-yellow-400" />
           </div>
         </Link>
       </div>
