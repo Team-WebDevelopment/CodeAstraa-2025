@@ -12,7 +12,10 @@ export default function HomePage() {
     seconds: 0,
   });
 
+  let [width, setWidth] = useState(0);
+
   useEffect(() => {
+    setWidth(innerWidth);
     const countdownDate = new Date("April 4, 2025 00:00:00").getTime();
 
     // Update the countdown every 1 second
@@ -76,7 +79,7 @@ export default function HomePage() {
       >
         {/* Main Content - Center */}
         <div className="text-center flex items-center justify-center flex-col mt-16 px-4 z-10">
-          {innerWidth && innerWidth >= 500 ? (
+          {width >= 500 ? (
             <Logo width={934} height={260} />
           ) : (
             <Logo width={934} height={130} />
