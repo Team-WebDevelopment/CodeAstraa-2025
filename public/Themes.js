@@ -1,5 +1,4 @@
-
-export const themes =[
+export const themes = [
   {
     "id": 1,
     "title": "Blockchain and Web3",
