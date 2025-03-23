@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation - Top Center with Glassmorphism */}
-      <div className="absolute top-6 font-mono left-1/2 transform text-md -translate-x-1/2 hidden md:flex space-x-6 bg-white/5 rounded-full border border-yellow-400/5 shadow-lg">
+      <div className="absolute top-6 font-mono left-1/2 transform text-md -translate-x-1/2 hidden md:flex space-x-6 bg-white/5 rounded-full border border-yellow-400/5 shadow-lg items-center justify-center">
         <Link
           href="/about"
           className="bg-[#EBC94B] rounded-full px-8 py-2  flex items-center font-bold"
@@ -30,19 +30,19 @@ const Navbar = () => {
         </Link>
         <Link
           href="/timeline"
-          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2 px-8"
         >
           Timeline
         </Link>
         <Link
           href="/themes"
-          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2 px-8"
         >
           Themes
         </Link>
         <Link
           href="/prizes"
-          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2 px-8"
         >
           Prizes
         </Link>
@@ -140,17 +140,17 @@ const Navbar = () => {
       <div className="absolute top-7 right-7 hidden md:flex space-x-4 opacity-50">
         <Link href="https://github.com" target="_blank">
           <div className="rounded-full">
-            <FaGithub className="text-4xl text-yellow-400" />
+            <FaGithub className="text-4xl text-yellow-400 hover:text-yellow-300" />
           </div>
         </Link>
         <Link href="https://linkedin.com" target="_blank">
           <div className="rounded-full">
-            <FaLinkedin className="text-4xl text-yellow-400" />
+            <FaLinkedin className="text-4xl text-yellow-400 hover:text-yellow-300" />
           </div>
         </Link>
         <Link href="https://instagram.com" target="_blank">
           <div className="rounded-full">
-            <FaInstagram className="text-4xl text-yellow-400" />
+            <FaInstagram className="text-4xl text-yellow-400 hover:text-yellow-300" />
           </div>
         </Link>
       </div>

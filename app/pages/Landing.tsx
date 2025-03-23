@@ -89,7 +89,7 @@ export default function HomePage() {
           <div className="mt-12 md:mt-16 mb-8">
             <Link
               href="/register"
-              className="bg-[#1D0B36] tracking-widest font-bold text-xl md:text-2xl p-4 rounded-full shadow-black/60 shadow-md hover:bg-[#2A1245] transition"
+              className="bg-[#1D0B36] tracking-widest font-bold text-xl md:text-2xl p-4 px-8 rounded-full shadow-black/60 shadow-md hover:bg-[#2A1245] transition"
               style={{
                 fontFamily: "'Harry P', fantasy",
               }}
