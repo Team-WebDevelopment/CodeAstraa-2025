@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
+import Rewards from "../components/Rewards";
 
 export default function HomePage() {
     // Set the date we're counting down to (April 4, 2025)
@@ -164,6 +165,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+            <Rewards />
         </>
     );
 }

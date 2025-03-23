@@ -23,7 +23,7 @@ export default function ThemeCard(data: DataProps) {
                     ))}
                 </h1></div>
                 <div className="img flex justify-center">
-                    <img className='w-32 h-22 md:w-52 md:h-36' src={data.image} alt="img not availlable" />
+                    <img className='w-32 h-22 md:w-52 md:h-36' src={data.image} alt="img not available" />
                 </div></div>
             <div className='data flex flex-row bg-white/67 mt-1 rounded-b-4xl items-center p-0.5 justify-between '>
                 <div className='font-sans font-bold text-xs p-1 md:text-md pl-3 md:px-4'>Know More</div>
