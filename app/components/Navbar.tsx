@@ -17,32 +17,32 @@ const Navbar = () => {
     <nav className="absolute w-full flex justify-between items-center px-10 py-5 z-50">
       {/* Logo - Top Left */}
       <div className="absolute top-5 left-5 md:left-10 z-30">
-        <Image src="/navLogo.png" alt="IEEE Logo" width={200} height={100} />
+        <Image src="/navLogo.png" alt="IEEE Logo" width={150} height={100} />
       </div>
 
       {/* Desktop Navigation - Top Center with Glassmorphism */}
-      <div className="absolute top-6 font-mono left-1/2 transform text-xl -translate-x-1/2 hidden md:flex space-x-6 bg-white/5 rounded-full border border-yellow-400/5 shadow-lg">
+      <div className="absolute top-6 font-mono left-1/2 transform text-md -translate-x-1/2 hidden md:flex space-x-6 bg-white/5 rounded-full border border-yellow-400/5 shadow-lg">
         <Link
           href="/about"
-          className="bg-yellow-400 rounded-full px-8 py-2  flex items-center font-bold"
+          className="bg-[#EBC94B] rounded-full px-8 py-2  flex items-center font-bold"
         >
           About
         </Link>
         <Link
           href="/timeline"
-          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-4"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2"
         >
           Timeline
         </Link>
         <Link
           href="/themes"
-          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-4"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2"
         >
           Themes
         </Link>
         <Link
           href="/prizes"
-          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-4"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2"
         >
           Prizes
         </Link>
@@ -140,17 +140,17 @@ const Navbar = () => {
       <div className="absolute top-7 right-7 hidden md:flex space-x-4 opacity-50">
         <Link href="https://github.com" target="_blank">
           <div className="rounded-full">
-            <FaGithub className="text-6xl text-yellow-400" />
+            <FaGithub className="text-4xl text-yellow-400" />
           </div>
         </Link>
         <Link href="https://linkedin.com" target="_blank">
           <div className="rounded-full">
-            <FaLinkedin className="text-6xl text-yellow-400" />
+            <FaLinkedin className="text-4xl text-yellow-400" />
           </div>
         </Link>
         <Link href="https://instagram.com" target="_blank">
           <div className="rounded-full">
-            <FaInstagram className="text-6xl text-yellow-400" />
+            <FaInstagram className="text-4xl text-yellow-400" />
           </div>
         </Link>
       </div>

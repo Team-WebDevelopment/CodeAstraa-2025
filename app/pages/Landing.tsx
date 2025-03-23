@@ -12,7 +12,10 @@ export default function HomePage() {
     seconds: 0,
   });
 
+  let [width, setWidth] = useState(0);
+
   useEffect(() => {
+    setWidth(innerWidth);
     const countdownDate = new Date("April 4, 2025 00:00:00").getTime();
 
     // Update the countdown every 1 second
@@ -75,37 +78,37 @@ export default function HomePage() {
         }}
       >
         {/* Main Content - Center */}
-        <div className="text-center mt-16 px-4 z-10">
-          <span className="hidden md:block">
-            <Logo width={934} height={315} />
-          </span>
-
-          <span className="flex md:hidden">
+        <div className="text-center flex items-center justify-center flex-col mt-16 px-4 z-10">
+          {width >= 500 ? (
+            <Logo width={934} height={260} />
+          ) : (
             <Logo width={934} height={130} />
-          </span>
+          )}
 
           {/* Register Button */}
           <div className="mt-12 md:mt-16 mb-8">
             <Link
               href="/register"
-              className="bg-[#1D0B36] tracking-widest text-yellow-400 font-bold text-xl md:text-3xl px-10 py-3 rounded-full shadow-black/60 shadow-md hover:bg-[#2A1245] transition"
+              className="bg-[#1D0B36] tracking-widest font-bold text-xl md:text-2xl p-4 rounded-full shadow-black/60 shadow-md hover:bg-[#2A1245] transition"
               style={{
                 fontFamily: "'Harry P', fantasy",
               }}
             >
-              Register Now!!
+              <span className="bg-gradient-to-r text-transparent from-[#FFD700]  via-[#FF8C00] to-[#FF8C00] bg-clip-text">
+                Register Now!!
+              </span>
             </Link>
           </div>
 
           {/* Countdown Section */}
           <div className="mt-12 md:mt-16">
-            <h3 className="text-white text-xl md:text-2xl mb-6">
+            <h3 className="text-white text-lg md:text-xl mb-6">
               And the countdown begins:
             </h3>
 
             <div className="flex flex-wrap justify-center gap-4">
               <div>
-                <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center border border-yellow-600">
+                <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] size-15 md:size-20 rounded-2xl flex items-center justify-center border border-yellow-600">
                   <div className="text-center">
                     <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] from-40% to-[#8365B2] text-transparent bg-clip-text">
                       {countdown.days}
@@ -118,7 +121,7 @@ export default function HomePage() {
               </div>
 
               <div>
-                <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center border border-yellow-600">
+                <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] size-15 md:size-20 rounded-2xl flex items-center justify-center border border-yellow-600">
                   <div className="text-center">
                     <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] from-40% to-[#8365B2] text-transparent bg-clip-text">
                       {countdown.hours}
@@ -131,7 +134,7 @@ export default function HomePage() {
               </div>
 
               <div>
-                <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center border border-yellow-600">
+                <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] size-15 md:size-20 rounded-2xl flex items-center justify-center border border-yellow-600">
                   <div className="text-center">
                     <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] from-40% to-[#8365B2] text-transparent bg-clip-text">
                       {countdown.minutes}
@@ -144,7 +147,7 @@ export default function HomePage() {
               </div>
 
               <div>
-                <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center border border-yellow-600">
+                <div className="bg-white/40  backdrop-blur-sm font-medium text-[#211A3B] size-15 md:size-20 rounded-2xl flex items-center justify-center border border-yellow-600">
                   <div className="text-center">
                     <div className="text-3xl md:text-4xl bg-gradient-to-br from-[#382B4C] from-40% to-[#8365B2] text-transparent bg-clip-text">
                       {countdown.seconds}
