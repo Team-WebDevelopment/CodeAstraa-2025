@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
 import ThemeCard from "../components/ThemeCard";
 import { themes } from "../../public/Themes";
 import SelectYourSpell from "../components/group";
@@ -10,7 +9,7 @@ export default function ThemePage() {
         <section className="min-h-screen flex flex-col items-center bg-cover bg-center relative overflow-hidden p-3  justify-center"
             style={{ backgroundImage: "url('ThemePg.png')" }}>
             <SelectYourSpell />
-            <div className="themes grid grid-cols-2  gap-10  xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 ">
+            <div className="themes grid grid-cols-2  gap-10  xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
                 {themes.map(data => (
                     <ThemeCard key={data.id} title={data.title} image={data.image} link={data.link} />
                 ))}
