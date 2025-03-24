@@ -6,15 +6,15 @@ import Landing from "./pages/Landing";
 import ThemePage from "./pages/ThemePage";
 import Timeline from "./pages/Timeline";
 export default function Home() {
-    return (
-        <>
-            <Navbar />
-            <Landing />
-            <Timeline />
-            <ThemePage />
-            <About />
-            <Rewards />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <Landing />
+      <Timeline />
+      <ThemePage />
+      <About />
+      <Rewards />
+      <Footer />
+    </>
+  );
 }
