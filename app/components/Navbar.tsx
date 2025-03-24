@@ -23,25 +23,25 @@ const Navbar = () => {
       {/* Desktop Navigation - Top Center with Glassmorphism */}
       <div className="absolute top-6 font-mono left-1/2 transform text-md -translate-x-1/2 hidden md:flex space-x-6 bg-white/5 rounded-full border border-yellow-400/5 shadow-lg items-center justify-center">
         <Link
-          href="/about"
+          href="/#about"
           className="bg-[#EBC94B] rounded-full px-8 py-2  flex items-center font-bold"
         >
           About
         </Link>
         <Link
-          href="/timeline"
+          href="/#timeline"
           className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2 px-8"
         >
           Timeline
         </Link>
         <Link
-          href="/themes"
+          href="/#themes"
           className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2 px-8"
         >
           Themes
         </Link>
         <Link
-          href="/prizes"
+          href="/#prizes"
           className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2 px-8"
         >
           Prizes
