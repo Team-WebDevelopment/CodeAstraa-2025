@@ -46,6 +46,12 @@ const Navbar = () => {
         >
           Prizes
         </Link>
+        <Link
+          href="/swags"
+          className=" font-bold text-yellow-400 hover:text-yellow-300 transition p-2 px-8"
+        >
+          Swags
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}
